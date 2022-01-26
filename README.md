@@ -81,7 +81,44 @@ User
 | useName | password     | firstName | lastName | email | phoneNumber| status |
 | :-------- | :------- | :---------- |:-------- | :------- |:-------- | :------- |
 
+```
+Reservation
+```
 
+| reservationId | restaurantId     | customerId | dateTime | bookedTable | orderId| status |
+| :-------- | :------- | :---------- |:-------- | :------- |:-------- | :------- |
+
+
+```
+Orders
+```
+
+| orderId | restaurantId     | customerId | items |
+| :-------- | :------- | :---------- |:-------- |
+
+
+```
+Customers
+```
+
+| customerId | customerName     | customerAddress | phoneNumber | email |
+| :-------- | :------- | :---------- |:-------- | :------- |
+
+
+```
+Table
+```
+
+| restaurantId     | capacity | availability |
+| :-------- | :------- | :---------- |
+
+
+```
+Menu
+```
+
+| foodItems     | price |
+| :-------- | :------- |
 
 ## ER Diagram
 
