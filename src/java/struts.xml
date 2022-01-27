@@ -5,6 +5,10 @@
 <struts>
     <!-- Configuration for the default package. -->
     <package name="default" extends="struts-default">
+        <action name="login" class="com.tablebooking.actions.UserAction" method="userLogin">
+            <result name="LOGIN">/index.jsp</result>
+            <result name="LOGINFAILED">/login.jsp</result>
+        </action>
         <action name="showRestaurants" class="com.tablebooking.actions.RestaurantAction" method="showRestaurants">
             <result name="RESTAURANTS">/showRestaurants.jsp</result>
         </action>
