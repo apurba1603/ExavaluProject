@@ -6,6 +6,7 @@ public class Tables {
     private int restaurantId;
     private int capacity;
     private int avalability;
+    private boolean status;
 
     /**
      * @return the restaurantId
@@ -48,5 +49,21 @@ public class Tables {
     public void setAvalability(int avalability) {
         this.avalability = avalability;
     }
+
+    /**
+     * @return the status
+     */
+    public boolean isStatus() {
+        return status;
+    }
+
+    /**
+     * @param status the status to set
+     */
+    public void setStatus(boolean status) {
+        this.status = status;
+    }
+
+    
 }
 

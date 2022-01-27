@@ -26,7 +26,7 @@ public class CustomerServices {
         Connection con = null;
          try {
         con = ConnectionManager.getConnection();
-         String sql = "SELECT * FROM customers";
+         String sql = "INSERT INTO customers (customerId,customerName,customerAddrees,email,phoneNumber) VALUES (?,?,?,?,?)";
          PreparedStatement ps = con.prepareStatement(sql);
          ps.setInt(1, customerId);
          ps.setString(2, customerName);
