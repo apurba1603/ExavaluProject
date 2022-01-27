@@ -1,0 +1,345 @@
+body{
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+/*---------------------------------
+            Header
+-----------------------------------*/
+.header{
+    width: 100%;
+    float: left;
+    background-color: #fff;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.07);
+}
+.logo{
+    float: left;
+    width: 100px;
+    padding-top: 20px;
+	padding-bottom:20px;
+}
+
+.icon{
+    float: right;
+    padding: 15px;
+    text-align: center;
+}
+.icon ul li{
+    float: left;
+    padding-left: 20px;
+}
+.icon a{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+}
+/*------------------------------------
+            Section1
+--------------------------------------*/
+.section{
+    width: 100%;
+    float: left;
+    padding: 30px 0;
+    border-top: 2px solid #ECE6E6;
+}
+.head-text{
+    padding-bottom: 20px;
+}
+.sec-wrap{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 15px;
+}
+.sec{
+    width: 260px;
+    float: left;
+    background-color: #f6f6f6;
+}
+.picture{
+    position: relative;
+}
+.picture img{
+    width: 100%;
+}
+.circle{
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}
+.circle img{
+    height: 20px;
+    width: 20px;
+    padding: 10px 10px;
+}
+.sec-btn{
+    padding: 20px 0;
+    text-align: center;
+}
+button{
+    padding-left: 10px;
+}
+button.btn1{
+    width: 115px;
+    background-color: #ff9933;
+    padding: 8px 6px;
+    color: #fff;
+    border: none;
+}
+button.btn2{
+    width: 115px;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 8px 6px;
+}
+.sec-text{
+    padding-left: 12px;
+}
+.sec-text p{
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+/*--------------------------
+            Page1
+----------------------------*/
+.section{
+    width: 100%;
+    float: left;
+    padding: 10px 0;
+    border-top: 2px solid #ECE6E6;
+}
+.text p{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+.grid-wrap{
+    float: left;
+    width: 570px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+.grid{
+    width: 320px;
+}
+.grid img{
+    width: 100%;
+}
+.model-picture{
+    position: relative;
+}
+.circle{
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}
+.circle img{
+    height: 20px;
+    width: 20px;
+    padding: 10px 10px;
+}
+/*------------------------------
+            Section2
+--------------------------------*/
+.box-wrap{
+    width: 500px;
+    float: right;
+}
+.box-text h1{
+    font-size: 26px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.box-text h2{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    color: #747171;
+}
+.border{
+    background-color: #9F9E9E;
+}
+.box-text{
+    padding-left: 15px;
+}
+.box-text p{
+    word-spacing: 5px;
+    padding: 10px 0;
+}
+.box-text h4{
+    padding-top: 10px;
+}
+
+.box-btn{
+    margin-left: 5px;
+    padding-bottom: 30px;
+}
+button{
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+button.a{
+    width: 270px;
+    background-color: #ff3e6c;
+    padding: 18px 15px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+}
+.bag-icon{
+    position: absolute;
+    left: 50px;
+    top: 16px;
+}
+button.b{
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 18px 15px;
+    border-radius: 5px;
+    position: relative;
+}
+.list-icon{
+    position: absolute;
+    left: 30px;
+    top: 16px;
+}
+/*------------------------
+        Offer-Text
+--------------------------*/
+.offer-text{
+    margin-left: 15px;
+}
+.price-text{
+    padding-bottom: 30px;
+}
+.price-text h5{
+    padding: 25px 0 12px 0;
+    font-size: 16px;
+    line-height: 20px;
+}
+.price-text img{
+    padding-left: 15px;
+}
+.price-text ul li{
+    list-style: square;
+    padding-bottom: 15px;
+    margin-left: 15px;
+}
+.discount-text li{
+    padding-bottom: 25px;
+    padding-left: 15px;
+}
+.discount-text p{
+    font-size: 14px;
+}
+/*------------------------
+        Product-Text
+--------------------------*/
+.product-text{
+    padding: 25px 0 0 15px;
+}
+.product-text img{
+    padding-left: 15px;
+}
+.product-text p{
+    padding-bottom: 20px;
+}
+.product-text h4{
+    padding-bottom: 15px;
+}
+.table{
+    padding-left: 15px;
+    width: 235px;
+    float: left;
+}
+.table h6{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    padding: 5px 0;
+    color: #9F9E9E;
+}
+.table p{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #CDC9C9;
+}
+/*------------------------
+        Product-Text
+--------------------------*/
+.del-text{
+    float: left;
+    width: 100%;
+    padding-left: 15px;
+}
+.del-text h5{
+    color: #ff3f6c;
+    padding: 20px 0;
+    border-bottom: 1px solid #CDC9C9;
+}
+.del-text h4{
+    padding: 30px 0; 
+}
+button.c{
+    width: 280px;
+    background-color: #fff;
+    border: 1px solid #CDC9C9;
+    padding: 10px 0px 10px 190px;
+    border-radius: 5px;
+    color: #ff3f6c;
+}
+.del-text img{
+    padding-left: 20px;
+}
+.del-text h6{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+.del-text p{
+    padding-bottom: 15px;
+}
+.sold-text{
+    padding-left: 15px;
+}
+.sold-text p{
+    padding-bottom: 15px;
+}
+
+
+

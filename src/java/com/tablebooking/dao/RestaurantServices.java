@@ -20,17 +20,18 @@ import java.util.List;
 public class RestaurantServices {
     
     public int registerNewRestaurant(String restaurantName, 
-            String location, String timings) throws SQLException {
+            String location, String timings, double approxCost) throws SQLException {
         int i =0;
         Connection con = null;
         try {
             con = ConnectionManager.getConnection();
             String sql = "INSERT INTO restaurant (restaurantName"
-                    + " , location , timings) VALUES (?,?,?)";
+                    + " , location , timings, approxCost) VALUES (?,?,?,?)";
             PreparedStatement ps = con.prepareStatement(sql);
             ps.setString(1, restaurantName);
             ps.setString(2, location);
             ps.setString(3, timings);
+            ps.setDouble(3, approxCost);
             System.out.println("SQL for insert=" + ps);
             i = ps.executeUpdate();
             return i;
@@ -62,7 +63,7 @@ public class RestaurantServices {
                 restaurant.setRestaurantName(rs.getString("restaurantName"));
                 restaurant.setLocation(rs.getString("location"));
                 restaurant.setTimings(rs.getString("timings"));
-                System.out.println("inside restaurants");
+                restaurant.setApproxCost(rs.getDouble("approxCost"));
                 restaurantList.add(restaurant);
             }
             return restaurantList;
@@ -95,6 +96,7 @@ public class RestaurantServices {
                 restaurant.setRestaurantName(rs.getString("restaurantName"));
                 restaurant.setLocation(rs.getString("location"));
                 restaurant.setTimings(rs.getString("timings"));
+                restaurant.setApproxCost(rs.getDouble("approxCost"));
 
             }
             return restaurant;
@@ -109,7 +111,7 @@ public class RestaurantServices {
     }
 
     public int updateRestaurantDetails(int restaurantId, String restaurantName, 
-            String location, String timings) throws SQLException, Exception {
+            String location, String timings, double approxCost) throws SQLException, Exception {
 
         Connection con = ConnectionManager.getConnection();
         int i = 0;
@@ -118,13 +120,15 @@ public class RestaurantServices {
                     + "SET\n"
                     + "restaurantName = ?,\n"
                     + "location = ?,\n"
-                    + "timings = ?\n"
+                    + "timings = ?,\n"
+                    + "approxCost = ?\n"
                     + "WHERE restaurantId = ?;";
             PreparedStatement ps = con.prepareStatement(sql);
             ps.setString(1, restaurantName);
             ps.setString(2, location);
             ps.setString(3, timings);
-            ps.setInt(4, restaurantId);
+            ps.setDouble(4, approxCost);
+            ps.setInt(5, restaurantId);
             System.out.println("Select SQL = " + ps);
             i = ps.executeUpdate();
             return i;

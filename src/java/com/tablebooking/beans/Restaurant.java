@@ -14,6 +14,7 @@ public class Restaurant {
     private String restaurantName;
     private String location;
     private String timings;
+    private double approxCost;
 
     /**
      * @return the restaurantId
@@ -69,6 +70,20 @@ public class Restaurant {
      */
     public void setTimings(String timings) {
         this.timings = timings;
+    }
+
+    /**
+     * @return the approxCost
+     */
+    public double getApproxCost() {
+        return approxCost;
+    }
+
+    /**
+     * @param approxCost the approxCost to set
+     */
+    public void setApproxCost(double approxCost) {
+        this.approxCost = approxCost;
     }
 
 
