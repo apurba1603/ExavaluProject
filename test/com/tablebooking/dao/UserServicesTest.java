@@ -35,7 +35,7 @@ public class UserServicesTest {
     @Test
     public void testRegisterUser() throws Exception {
         System.out.println("registerUser");
-        String userName = "Aman";
+        String userName = "AmanK";
         String password = "12345";
         String firstName = "Aman";
         String lastName = "Kumar";
@@ -48,86 +48,86 @@ public class UserServicesTest {
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
     }
-}
 
-//    /**
-//     * Test of report method, of class UserServices.
-//     */
-//    @Test
-//    public void testReport() throws Exception {
-//        System.out.println("report");
-//        UserServices instance = new UserServices();
-//        List expResult = null;
-//        List result = instance.report();
-//        assertEquals(expResult, result);
-//        // TODO review the generated test code and remove the default call to fail.
-//        fail("The test case is a prototype.");
-//    }
-//
-//    /**
-//     * Test of fetchUserDetails method, of class UserServices.
-//     */
-//    @Test
-//    public void testFetchUserDetails() throws Exception {
-//        System.out.println("fetchUserDetails");
-//        String userName = "";
-//        UserServices instance = new UserServices();
-//        User expResult = null;
-//        User result = instance.fetchUserDetails(userName);
-//        assertEquals(expResult, result);
-//        // TODO review the generated test code and remove the default call to fail.
-//        fail("The test case is a prototype.");
-//    }
-//
-//    /**
-//     * Test of updateUserDetails method, of class UserServices.
-//     */
-//    @Test
-//    public void testUpdateUserDetails() throws Exception {
-//        System.out.println("updateUserDetails");
-//        String userName = "";
-//        String password = "";
-//        String firstName = "";
-//        String lastName = "";
-//        String email = "";
-//        String phoneNumber = "";
-//        UserServices instance = new UserServices();
-//        int expResult = 0;
-//        int result = instance.updateUserDetails(userName, password, firstName, lastName, email, phoneNumber);
-//        assertEquals(expResult, result);
-//        // TODO review the generated test code and remove the default call to fail.
-//        fail("The test case is a prototype.");
-//    }
-//
-//    /**
-//     * Test of deleteUserDetails method, of class UserServices.
-//     */
-//    @Test
-//    public void testDeleteUserDetails() throws Exception {
-//        System.out.println("deleteUserDetails");
-//        String userName = "";
-//        UserServices instance = new UserServices();
-//        int expResult = 0;
-//        int result = instance.deleteUserDetails(userName);
-//        assertEquals(expResult, result);
-//        // TODO review the generated test code and remove the default call to fail.
-//        fail("The test case is a prototype.");
-//    }
-//
-//    /**
-//     * Test of validateLoginCredentials method, of class UserServices.
-//     */
-//    @Test
-//    public void testValidateLoginCredentials() throws Exception {
-//        System.out.println("validateLoginCredentials");
-//        String userName = "";
-//        String password = "";
-//        UserServices instance = new UserServices();
-//        User expResult = null;
-//        User result = instance.validateLoginCredentials(userName, password);
-//        assertEquals(expResult, result);
-//        // TODO review the generated test code and remove the default call to fail.
-//        fail("The test case is a prototype.");
-//    }
-//    
+
+    /**
+     * Test of report method, of class UserServices.
+     */
+    @Test
+    public void testReport() throws Exception {
+        System.out.println("report");
+        UserServices instance = new UserServices();
+        List expResult = null;
+        List result = instance.report();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of fetchUserDetails method, of class UserServices.
+     */
+    @Test
+    public void testFetchUserDetails() throws Exception {
+        System.out.println("fetchUserDetails");
+        String userName = "";
+        UserServices instance = new UserServices();
+        User expResult = null;
+        User result = instance.fetchUserDetails(userName);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of updateUserDetails method, of class UserServices.
+     */
+    @Test
+    public void testUpdateUserDetails() throws Exception {
+        System.out.println("updateUserDetails");
+        String userName = "";
+        String password = "";
+        String firstName = "";
+        String lastName = "";
+        String email = "";
+        String phoneNumber = "";
+        UserServices instance = new UserServices();
+        int expResult = 0;
+        int result = instance.updateUserDetails(userName, password, firstName, lastName, email, phoneNumber);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of deleteUserDetails method, of class UserServices.
+     */
+    @Test
+    public void testDeleteUserDetails() throws Exception {
+        System.out.println("deleteUserDetails");
+        String userName = "";
+        UserServices instance = new UserServices();
+        int expResult = 0;
+        int result = instance.deleteUserDetails(userName);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of validateLoginCredentials method, of class UserServices.
+     */
+    @Test
+    public void testValidateLoginCredentials() throws Exception {
+        System.out.println("validateLoginCredentials");
+        String userName = "";
+        String password = "";
+        UserServices instance = new UserServices();
+        User expResult = null;
+        User result = instance.validateLoginCredentials(userName, password);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+}
 

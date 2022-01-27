@@ -25,7 +25,7 @@ public class UserServices {
         Connection con = null;
         try {
             con = ConnectionManager.getConnection();
-            String sql = "INSERT INTO users (userName,password,firstName,lastName,email,phoneNumber) VALUES (?,?,?,?,?,?,?)";
+            String sql = "INSERT INTO users (userName,password,firstName,lastName,email,phoneNumber) VALUES (?,?,?,?,?,?)";
             PreparedStatement ps = con.prepareStatement(sql);
             ps.setString(1, userName);
             ps.setString(2, password);
@@ -33,7 +33,7 @@ public class UserServices {
             ps.setString(4, lastName);
             ps.setString(5, email);
             ps.setString(6, phoneNumber);
-            ps.setInt(7, 1);
+           
             System.out.println("SQL for insert=" + ps);
             i = ps.executeUpdate();
             return i;
