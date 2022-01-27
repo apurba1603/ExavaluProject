@@ -1,0 +1,1598 @@
+/*
+    font-family: 'Cookie', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'ZCOOL XiaoWei', serif;
+*/
+body{
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    background-color: #fff;
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+/*-------------------------------
+        Header/Top header
+---------------------------------*/
+.top-header{
+    padding: 8px 0;
+    background: #1c1c1c;
+}
+.contact{
+    display: inline-block;
+}
+.contact ul li{
+    display: inline-block;
+}
+.contact li img{
+    width: 18px;
+}
+.contact ul li a{
+    padding: 0 8px;
+}
+.social-icon{
+    display: inline-block;
+}
+.social-icon li{
+    display: inline-block;
+}
+.social-icon li img{
+    width: 18px;
+}
+.social-icon li a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #b0926b;
+    text-align: center;
+    padding: 5px 0;
+    margin-right: 2px;
+}
+.info{
+    float: right;
+    padding-top: 5px;
+}
+.info ul li{
+    display: inline-block;
+    padding-left: 8px;
+}
+.info li img{
+    width: 18px;
+    margin-right: 5px;
+}
+.info ul li a{
+    font-size: 14px;
+    line-height: 18px;
+}
+/*-------------------------------
+        Header/Bottom header
+---------------------------------*/
+.navbar-brand img{
+    width: 300px;
+}
+.site-header .navbar{
+    padding: 0 1rem;
+}
+.site-header .navbar .navbar-nav  li a{
+    display: inline-block;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 2px;
+    padding: 36px 0;
+    position: relative;
+}
+.site-header .navbar .navbar-nav  li{
+    padding: 0 18px;
+}
+.site-header .navbar .navbar-nav  li a:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #a7781d;
+    height: 4px;
+    width: 0;
+    opacity: 0;
+}
+.site-header .navbar .navbar-nav  li a:hover:before{
+    opacity: 1;
+    width: 100%;
+    transition: all 0.5s ease-in;
+}
+.site-header .navbar .navbar-nav  li a:hover{
+    color: #000;
+}
+.site-header .navbar .navbar-nav  li .nav-link{
+    color: #000;
+}
+.site-header .navbar .navbar-nav  li:last-child{
+    padding-right: 0;
+}
+/*-------------------------------
+            Banner
+---------------------------------*/
+.home-banner .carousel-inner .carousel-item img{
+    width: 100%;
+}
+.home-banner .carousel-inner .carousel-item:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+.home-banner .carousel-inner .carousel-caption{
+    bottom: 15%;
+}
+.home-banner .carousel-inner .carousel-caption h2{
+    font-size: 54px;
+    line-height: 60px;
+    font-weight: 400;
+    font-family: 'Cookie', cursive;
+}
+.home-banner .carousel-inner .carousel-caption h1{
+    font-size: 60px;
+    line-height: 66px;
+    font-weight: 400;
+    font-family: 'ZCOOL XiaoWei', serif;
+    text-transform: uppercase;
+    padding: 5px 0;
+}
+.banner-btn{
+    background: #a7781d;
+    border-radius: 0;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 230px;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+.banner-btn:hover{
+    background: #fff;
+    color: #a7781d;
+}
+.btn-subscribe{
+	 background: #a7781d;
+    border-radius: 0;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 230px;
+    padding: 15px 0;
+    margin-top: 30px;
+	
+}
+/*-------------------------------
+            Sec
+---------------------------------*/
+.sec{
+    background: #f5ecdb;
+    padding: 80px 0;
+}
+.food-image{
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+.food-image img{
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid #a7781d;
+    position: relative;
+}
+
+
+/*-------------------------------
+            Gallery
+---------------------------------*/
+.gallery-picture{
+    display: flex;
+    justify-content: center;
+}
+.gallery-picture img{
+    width: 100%;
+}
+.gallery-picture li{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.45);
+    opacity: 0;
+}
+.overlay img{
+    width: 40px !important;
+    padding-top: 45%;
+}
+.gallery-picture li:hover .overlay{
+    opacity: 1;
+    transition: 0.5s ease;
+}
+/*-------------------------------
+            Menu-sec
+---------------------------------*/
+.heading h2{
+    font-size: 60px;
+    line-height: 66px;
+    font-family: 'Cookie', cursive;
+    color: #333;
+}
+.glod{
+    color: #a7781d;
+}
+.border{
+    width: 130px;
+    height: 2px;
+    background: #333;
+    border: none !important;
+    position: relative;
+}
+.border:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65px;
+    height: 2px;
+    background: #a7781d;
+}
+.heading p{
+    color: #000;
+    padding-bottom: 40px;
+}
+.menu-picture img{
+    width: 100%;
+}
+.menu-picture{
+    position: relative;
+}
+.menu-picture:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+.menu-chart{
+    background: #fff;
+    padding: 32px 20px;
+}
+.menu-chart h2{
+    font-size: 24px;
+    line-height: 28px;
+    font-family: 'ZCOOL XiaoWei', serif;
+    color: #000;
+}
+.menu-chart h5{
+    color: #a7781d;
+    padding-top: 15px;
+}
+.menu-chart p{
+    color: #333;
+    padding: 40px 0;
+}
+.menu-btn{
+    background: #a7781d;
+    border-radius: 0;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 180px;
+    padding: 10px 0;
+}
+.menu-btn:hover{
+    background: #f5ecdb;
+    color: #a7781d;
+}
+.sec-btn{
+    margin-top: 60px;
+}
+.sec-btn:hover{
+    background: #fff;
+    color: #a7781d;
+}
+/*-------------------------------
+            Video-section
+---------------------------------*/
+.video-wrap{
+    line-height: 0;
+}
+.video-section video{
+    width: 100%;
+}
+.video-slider .carousel-inner .carousel-item img{
+    width: 100%;
+}
+.heading-white{
+    color: #fff;
+}
+.heading-white h2{
+    font-size: 60px;
+    line-height: 66px;
+    font-family: 'Cookie', cursive;
+}
+.white-border{
+    width: 130px;
+    height: 2px;
+    background: #fff;
+    position: relative;
+    border: none;
+}
+.white-border:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65px;
+    height: 2px;
+    background: #a7781d;
+}
+.heading-white h4{
+    font-size: 30px;
+    line-height: 34px;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+/*-------------------------------
+                Team
+---------------------------------*/
+.team{
+    padding-top: 40px;
+}
+.member-picture img{
+    width: 100%;
+}
+.member-details{
+    background: #fff;
+    color: #000;
+}
+.member-details h4{
+    font-size: 24px;
+    line-height: 28px;
+    font-family: 'ZCOOL XiaoWei', serif;
+    padding-top: 20px;
+}
+.member-details p{
+    padding: 20px 0;
+    font-weight: 600;
+}
+.member-picture{
+    position: relative;
+}
+.member-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.45);
+    opacity: 0;
+}
+.member-icon li{
+    display: inline-block;
+    margin-left: 3px;
+}
+.member-icon li a img{
+    width: 30px !important;
+}
+.member-icon{
+    padding-top: 94%;
+}
+.team:hover .member-overlay{
+    opacity: 1;
+    cursor: pointer;
+}
+.team:hover .member-details{
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+/*-------------------------------
+        Parallax/testimonial
+---------------------------------*/
+.parallax{
+    padding: 80px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.parallax:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+.heading-white p{
+    padding-bottom: 40px;
+}
+.user{
+    background: #fff;
+    position: relative;
+    margin-top: 18%;
+}
+.owl-carousel .owl-item .user-picture img{
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -13%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.user img{
+    width: 20px;
+}
+.user p{
+    font-size: 24px;
+    line-height: 28px;
+    color: #333;
+    padding: 18% 10% 40px;
+    position: relative;
+}
+.user p:before{
+    content: "";
+    position: absolute;
+    background-image: url(../images/icon/left-quotes-sign.png);
+    width: 25px;
+    height: 22px;
+    top: 36%;
+    left: 3%;
+}
+.user h3{
+    font-size: 30px;
+    line-height: 34px;
+    font-family: 'ZCOOL XiaoWei', serif;
+    color: #000;
+}
+.user h6{
+    font-size: 28px;
+    line-height: 32px;
+    font-family: 'Cookie', cursive;
+    color: #a7781d;
+    padding: 20px 0 40px;
+}
+/*-------------------------------
+        Features-section
+---------------------------------*/
+.feature-sec{
+    padding: 80px 0;
+    background: #fff;
+}
+.feature-icon img{
+    width: 80px;
+}
+.feature h3{
+    font-size: 24px;
+    line-height: 28px;
+    font-family: 'ZCOOL XiaoWei', serif;
+    color: #000;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+.feature-border{
+    width: 75px;
+    height: 2px;
+    background: #a7781d;
+    border: none;
+}
+.feature p{
+    color: #000;
+}
+/*-------------------------------
+            Newsletter
+---------------------------------*/
+.newsletter{
+    background: #1c1c1c;
+    padding: 80px 0;
+}
+.fill{
+    background: #1c1c1c;
+    border-radius: 0;
+    outline: none;
+    border: 1px solid #5c5c5c;
+}
+.btn-subscribe{
+    background: #fff;
+    border-radius: 0;
+    color: #a7781d;
+    font-weight: 600;
+    outline: none;
+}
+.btn-subscribe:hover{
+    background: #a7781d;
+    color: #fff;
+}
+/*-------------------------------
+                Map
+---------------------------------*/
+.map{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/*-------------------------------
+                Footer
+---------------------------------*/
+.footer-bg{
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    position: relative;
+}
+.footer-bg:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.78);
+}
+.footer-logo img{
+    width: 300px;
+}
+.footer-nav{
+    padding: 50px 0;
+}
+.footer-nav li{
+    display: inline-block;
+    padding: 0 20px;
+    position: relative;
+}
+.footer-nav li:before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 13px;
+    width: 6px;
+    height: 2px;
+    background: #a7781d;
+}
+.footer-nav li:last-child:before{
+    background: transparent;
+}
+.footer-nav li a{
+    font-size: 20px;
+    line-height: 24px;
+    color: #a7781d;
+    letter-spacing: 2px;
+}
+.footer-nav li a:hover{
+    color: #fff;
+}
+.footer-icon li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.footer-icon li img{
+    width: 20px;
+}
+.copyright{
+    padding: 50px 0 20px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+}
+.copyright li{
+    display: inline-block;
+    color: #fff;
+    padding: 0 10px;
+    border-right: 1px solid #fff;
+}
+.copyright li:last-child{
+    border-right: none;
+}
+.right{
+    color: #a7781d;
+    padding-right: 10px;
+    font-size: 24px;
+    vertical-align: middle;
+}
+.footer-content p{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+/*-------------------------------
+        GALLERY-PAGE
+---------------------------------*/
+/*-------------------------------
+        Parallax-banner
+---------------------------------*/
+.parallax-banner{
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 0;
+    position: relative;
+}
+.parallax-banner:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+.banner-content{
+    color: #fff;
+}
+.banner-content h2{
+    font-size: 54px;
+    line-height: 60px;
+    font-family: 'Cookie', cursive;
+}
+.banner-content h1{
+    font-size: 60px;
+    line-height: 66px;
+    font-family: 'ZCOOL XiaoWei', serif;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+.banner-border{
+    width: 1px;
+    height: 150px;
+    background: #fff;
+}
+/*-------------------------------
+        Gallery-parallax 
+---------------------------------*/
+.gallery-parallax{
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+}
+.gallery-image img{
+    width: 100%;
+}
+.gallery-image{
+    position: relative;
+    margin: 15px 0;
+}
+.overlay-inner img{
+    width: 40px;
+    padding-top: 20%;
+}
+.padding-top{
+    padding-top: 20%;
+}
+.overlay-inner{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.45);
+    opacity: 0;
+}
+.gallery-image:hover .overlay-inner{
+    opacity: 1;
+    transition: 1.0s ease;
+}
+/*-------------------------------
+            ABOUT-PAGE
+---------------------------------*/
+/*-------------------------------
+            Grey-bg
+---------------------------------*/
+.grey-bg{
+    background: #d4c7b0;
+}
+.heading h6{
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+    padding: 15px 0;
+}
+.heading h4{
+    font-size: 24px;
+    line-height: 28px;
+    color: #000;
+    font-family: 'ZCOOL XiaoWei', serif;
+    padding: 12px 0;
+}
+.heading h5{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #000;
+}
+.heading img{
+    padding-top: 30px;
+}
+.story-picture img{
+    width: 100%;
+}
+/*-------------------------------
+            Food-section
+---------------------------------*/
+.food-icon{
+    padding-top: 60px;
+}
+.food-icon li{
+    display: inline-block;
+    color: #fff;
+    padding: 0 40px;
+}
+.food-icon img{
+    width: 70px;
+}
+.food-icon li h5{
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'ZCOOL XiaoWei', serif;
+    padding: 40px 0;
+}
+.food-box{
+    background: #e6e2db;
+}
+.small-box{
+    width: 150px;
+    height: 40px;
+    background: #a7781d;
+    margin-bottom: 25px;
+}
+.small-box h5{
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    font-family: 'ZCOOL XiaoWei', serif;
+    padding: 9px 0;
+}
+.food-picture img{
+    width: 100%;
+    border-radius: 50%;
+}
+.food-picture{
+    width: 170px;
+    height: 170px;
+    margin: 0 auto;
+    position: relative;
+}
+.circle{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #a7781d;
+    border: 5px solid #fff;
+}
+.circle h4{
+    font-size: 24px;
+    line-height: 28px;
+    font-family: 'Cookie', cursive;
+    color: #fff;
+    padding: 15px 0;
+}
+.food-box h6{
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'ZCOOL XiaoWei', serif;
+    padding: 30px 0;
+}
+.food-btn{
+    width: 165px;
+    background: #000;
+    margin: 50px 0;
+}
+.food-btn:hover{
+    background: #fff;
+    color: #a7781d;
+}
+/*-------------------------------
+            MENU-PAGE
+---------------------------------*/
+/*-------------------------------
+                Sec
+---------------------------------*/
+.padding-bottom{
+    padding-bottom: 60px;
+}
+.menu-image img{
+    width: 100%;
+}
+.menu-details h3{
+    font-size: 28px;
+    line-height: 32px;
+    font-family: 'ZCOOL XiaoWei', serif;
+    color: #333;
+}
+.menu-details h4{
+    font-size: 24px;
+    line-height: 28px;
+    padding: 10px 0;
+}
+.menu-details p{
+    padding-bottom: 40px;
+}
+/*-------------------------------
+            CONTACT-PAGE
+---------------------------------*/
+/*-------------------------------
+                Sky-bg
+---------------------------------*/
+.sky-bg{
+    background: #e1e0e0;
+}
+.contact-box h3{
+    font-size: 42px;
+    line-height: 46px;
+    color: #000;
+    font-family: 'ZCOOL XiaoWei', serif;
+    padding-top: 30px;
+}
+.border-black{
+    width: 80px;
+    height: 2px;
+    border: none;
+    background: #000;
+}
+.contact-list, .form-box{
+    padding-top: 30px;
+}
+.contact-list img{
+    width: 25px;
+}
+.contact-list li{
+    padding-bottom: 20px;
+}
+.contact-list li a{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #a7781d;
+}
+.contact-fill{
+    background: #fff;
+    border-radius: 0;
+    height: 50px;
+}
+.form-group{
+    margin-bottom: 30px;
+}
+.fill-area {
+    border-radius: 0;
+    resize: none;
+    height: 120px !important;
+}
+.contact-btn{
+    background: #000;
+    margin-top: 15px;
+}
+.contact-btn:hover{
+    background: #fff;
+    color: #a7781d;
+}
+/*-------------------------------
+            Box
+---------------------------------*/
+.box{
+    border: 8px solid #d6cc5c;
+}
+.solid-bg{
+    background: #d6cc5c;
+    margin: 25px;
+    height: 200px;
+}
+.solid-bg h3{
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'ZCOOL XiaoWei', serif;
+    color: #000;
+    padding-top: 30px;
+}
+.solid-bg p, .time-list{
+    padding-top: 25px;
+    font-weight: 600;
+}
+.partner-icon li{
+    display: inline-block;
+    padding: 40px 0;
+}
+.partner-icon img{
+    width: 100%;
+}
+.time-list li{
+    padding-bottom: 8px;
+}
+/*-------------------------------
+            Responsive
+---------------------------------*/
+@media only screen and (max-width: 1920px) {}
+
+@media only screen and (max-width: 1300px) {}
+
+@media only screen and (max-width: 1199px) {
+    /*----Home-page----*/
+    /*----Bottom-Hearder----*/
+    .site-header .navbar .navbar-nav li a {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .navbar-brand img {
+        width: 250px;
+    }
+    /*----Home-Banner----*/
+    .home-banner .carousel-inner .carousel-caption h1{
+        font-size: 48px;
+        line-height: 56px;
+    }
+    .banner-border{
+        height: 100px;
+    }
+    /*----Sec/Menu----*/
+    .menu-chart{
+        padding: 25px 25px;
+    }
+    .menu-chart p{
+        padding: 20px 0;
+    }
+    /*----video-section----*/
+    .heading-white h2 {
+        font-size: 50px;
+        line-height: 56px;
+    }
+    .heading-white h4 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .sec-btn {
+        margin-top: 30px;
+    }
+    /*----Feature-Sec----*/
+    .feature h3 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    /*----About-page----*/
+    /*----Parallax-banner----*/
+    .food-icon li {
+        padding: 0 30px;
+    }
+    /*----Menu-page----*/
+    /*----Sec----*/
+    .menu-details h3 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .menu-details h4 {
+        font-size: 20px;
+        line-height: 24px;
+        padding: 6px 0;
+    }
+    .menu-details p {
+        padding-bottom: 30px;
+    }
+    /*----Contact-page----*/
+    /*----Sec/Sky-bg----*/
+    .contact-box h3 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .contact-list li a {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    /*----Home-Banner----*/
+    .home-banner .carousel-inner .carousel-caption {
+        bottom: 20px; 
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    /*----Sec/Menu----*/
+    .menu-chart {
+        padding: 95px 15%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    /*----Home-page----*/
+    /*----Top-Header----*/
+    .contact li img {
+        width: 16px;
+    }
+    .contact ul li a {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .social-icon li a {
+        width: 25px;
+        height: 25px;
+        padding: 0;
+    }
+    .social-icon li img {
+        width: 14px;
+    }
+    .info {
+        float: left;
+        padding-top: 0;
+    }
+    .info ul li{
+        padding-left: 0;
+    }
+    .info li img {
+        width: 16px;
+    }
+    /*----Bottom-Header----*/
+    .site-header .navbar {
+        padding: 10px 0;
+        background: #fff;
+    }
+    .navbar-toggler{
+        background: #a7781d;
+        border-radius: 0;
+    }
+    .navbar-collapse{
+        border-top: 1px solid #a7781d;
+        margin-top: 16px;
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.90);
+        left: 0;
+        right: 0;
+        height: 100vh;
+        z-index: 999;
+        top: 52px;
+        text-align: center;
+    }
+    .site-header .navbar .navbar-nav li a{
+        padding: 15px 0;
+    }
+    .site-header .navbar .navbar-nav li .nav-link{
+        color: #a7781d;
+    }
+    .site-header .navbar .navbar-nav li a:before{
+        background: transparent;
+    }
+    .site-header .navbar .navbar-nav li a:hover {
+        color: #fff;
+    }
+    /*----Home-Banner----*/
+    .home-banner .carousel-inner .carousel-caption{
+        padding: 0;
+    }
+    .banner-border {
+        height: 100px;
+    }
+    .home-banner .carousel-inner .carousel-caption h2 {
+        font-size: 44px;
+        line-height: 50px;
+    }
+    .home-banner .carousel-inner .carousel-caption h1 {
+        font-size: 38px;
+        line-height: 44px;
+    }
+    .banner-btn {
+        width: 180px;
+        padding: 12px 0;
+        margin-top: 20px;
+    }
+    /*----Sec/Menu----*/
+    .menu-chart {
+        padding: 41px 15px;
+    }
+    .heading h2{
+        font-size: 42px;
+        line-height: 48px;
+    }
+    /*----Video-section----*/
+    .heading-white h2 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+    .heading-white h4 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    /*----Sec/Member----*/
+    .member-details {
+        padding: 15px 0;
+    }
+    .member-details h4 {
+        font-size: 20px;
+        line-height: 24px;
+        padding-top: 10px;
+    }
+    .member-details p {
+        font-weight: 400;
+        padding: 10px 0;
+    }
+    /*----Parallax----*/
+    .user-picture {
+        width: 100px;
+        top: -13%;
+    }
+    .user{
+        margin-top: 25%;
+    }
+    .user p {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 32% 10% 20px;
+    }
+    /*----Feature-sec----*/
+    .feature h3 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .feature p{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    /*----Footer-bg----*/
+    .footer-nav li a {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    /*----About-page----*/
+    /*----Parallax-banner----*/
+    .food-icon {
+        padding: 30px 0;
+    }
+    .food-icon li {
+        padding: 0 10px;
+    }
+    .food-icon img {
+        width: 50px;
+    }
+    .food-icon li h5 {
+        padding: 30px 0;
+    }
+    /*----Menu-page----*/
+    /*----Sec----*/
+    .menu-details h3 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .menu-details h4 {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 2px 0;
+    }
+    .menu-details p {
+        padding-bottom: 12px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    /*----Contact-page----*/
+    /*----Sec/Sky-bg----*/
+    .solid-bg{
+        margin: 10px;
+    }
+    .solid-bg p, .time-list{
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    /*----Home-Banner----*/
+    .banner-border {
+        height: 80px;
+    }
+    /*----Sec/Menu----*/
+    .menu-btn{
+        width: 150px;
+    }
+    .sec-btn {
+        margin-top: 30px;
+        width: 150px;
+    }
+    /*----Video-Section----*/
+    .heading-white h4{
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /*----Home-Banner----*/
+    .banner-border {
+        height: 60px;
+    }
+    .home-banner .carousel-inner .carousel-caption h2 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .home-banner .carousel-inner .carousel-caption h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .banner-btn {
+        width: 150px;
+        padding: 10px 0;
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 15px;
+    }
+    /*----Sec----*/
+    .food-image {
+        width: 200px;
+        height: 200px;
+    }
+    .offer-price {
+        width: 60px;
+        height: 60px;
+        right: 20%;
+    }
+    .offer-price h4 {
+        font-size: 24px;
+        line-height: 28px;
+        padding: 12px 0;
+    }
+    .offer-sec h3 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    /*----Sec/Menu----*/
+    .menu-chart {
+        padding: 59px 20px;
+    }
+    .menu-chart h2 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .menu-chart h5 {
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 10px;
+    }
+    .menu-chart p {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 25px 0;
+    }
+    .menu-btn {
+        width: 130px;
+        padding: 8px 0;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    /*----Footer-bg----*/
+    .footer-nav li{
+        padding: 0 15px;
+    }
+    .footer-nav li:before{
+        top: 10px;
+    }
+    .footer-nav li a {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /*----Home-page----*/
+    /*----Top-Header----*/
+    .info ul li {
+        display: inherit;
+    }
+    /*----Sec----*/
+    .offer-price {
+        right: 20px;
+    }
+    /*----Sec/Menu----*/
+    .menu-chart {
+        padding: 10px 5px;
+    }
+    /*----Video-section----*/
+    .video-slider .carousel-caption {
+        bottom: 15%;
+    }
+    /*----Parallax----*/
+    .user p {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 20% 10% 15px;
+    }
+    .user h3 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .user h6 {
+        font-size: 24px;
+        line-height: 28px;
+        padding: 15px 0 20px;
+    }
+    /*----Feature-sec----*/
+    .feature {
+        padding: 30px 80px;
+    }
+    /*----Footer-Bg----*/
+    .footer-nav li {
+        padding: 0 8px;
+    }
+    .footer-nav li:before {
+        right: -3px;
+    }
+    /*----About-page----*/
+    /*----Sec----*/
+    .heading img {
+        padding: 30px 0;
+    }
+    /*----Parallax-banner/food-details----*/
+    .food-icon li {
+        padding: 0 5px;
+    }
+    .food-icon li h5 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .food-box p{
+        padding: 0 10px;
+    }
+    /*----Menu-page----*/
+    /*----Sec----*/
+    .menu-image {
+        padding: 40px 0;
+    }
+    /*----Contact-page----*/
+    /*----Sec/Sky-bg----*/
+    .box {
+        margin: 15px 0;
+    }
+    .solid-bg {
+        margin: 25px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    /*----Home-Banner----*/
+    .banner-border {
+        height: 50px;
+    }
+    .home-banner .carousel-inner .carousel-caption h2 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .home-banner .carousel-inner .carousel-caption h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .banner-btn {
+        width: 130px;
+        font-size: 14px;
+        line-height: 18px;
+        padding: 8px 0;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    /*----Sec----*/
+    .offer-price {
+        right: 30%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    /*----Home-page----*/
+    /*----Bottom-header----*/
+    .site-header .navbar{
+        padding: 10px 15px;
+    }
+    /*----Home-Banner----*/
+    .home-banner .carousel-inner .carousel-caption {
+        bottom: 35px;
+    }
+    .banner-border {
+        height: 0;
+        background: none;
+    }
+    /*----Footer-Bg----*/
+    .footer-logo img {
+        width: 200px;
+    }
+    .footer-nav {
+        padding: 20px 0;
+    }
+    .footer-nav li {
+        display: inherit;
+        padding: 5px 0;
+    }
+    .footer-nav li:before {
+        background: none;
+    }
+    .footer-icon li {
+        padding: 0 10px;
+    }
+    .copyright {
+        padding: 25px 0 15px;
+    }
+    /*----About-page----*/
+    /*----Parallax-Banner----*/
+    .banner-content h2 {
+        font-size: 44px;
+        line-height: 50px;
+    }
+    .banner-content h1 {
+        font-size: 42px;
+        line-height: 48px;
+        padding: 0;
+    }
+    /*----Parallax-Banner/food-details----*/
+    .food-icon li {
+        padding: 0 10px;
+    }
+    .food-icon img{
+        display: none;
+    }
+    .food-icon li h5 {
+        padding: 10px 0;
+}
+    /*----Menu-page----*/
+    /*----Sec----*/
+    .padding-bottom{
+        padding-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /*----Home-page----*/
+    /*----Top-Header----*/
+    .top-header{
+        text-align: center;
+    }
+    .info ul li {
+        display: inline-block;
+    }
+    .social-icon {
+        display: inherit;
+        padding: 5px 0;
+    }
+    /*----Bottom-header----*/
+    .navbar-brand img {
+        width: 200px;
+    }
+    .navbar-collapse {
+        top: 45px;
+    }
+    /*----Video-section----*/
+    .video-slider .carousel-caption {
+        bottom: 0;
+    }
+    .white-border {
+        margin: 8px auto;
+    }
+    .heading-white h4 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .sec-btn {
+        margin-top: 15px;
+        width: 100px;
+        padding: 6px 0;
+    }
+    /*----parallax----*/
+    .heading-white h2 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    /*----Gallery----*/
+    .gallery-picture{
+        display: inherit;
+    }
+    /*----About-page----*/
+    /*----Parallax-Banner----*/
+    .banner-content h2 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .banner-content h1 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    /*----Parallax-Banner/food-details----*/
+    .food-icon li {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 472px) {
+    /*----Home-Banner----*/
+    .home-banner .carousel-inner .carousel-caption {
+        bottom: 20px;
+    }
+    .home-banner .carousel-inner .carousel-caption h2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .home-banner .carousel-inner .carousel-caption h1 {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 0;
+    }
+    .banner-btn {
+        width: 100px;
+        font-size: 12px;
+        line-height: 16px;
+        padding: 6px 0;
+        border-radius: 5px;
+        letter-spacing: 1px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    /*----Sec----*/
+    .offer-price {
+        right: 18%;
+    }
+    /*----Parallax----*/
+    .user p{
+        padding: 26% 10% 15px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    /*----Home-page----*/
+    /*----Footer-Bg----*/
+    .copyright li {
+        border-right: none;
+        padding: 3px 5px;
+    }
+    /*----Feature-sec----*/
+    .feature {
+        padding: 30px 20px;
+    }
+}
+
+
+
+
+
+
+
