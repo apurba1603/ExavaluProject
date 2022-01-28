@@ -70,7 +70,7 @@
                                 <a class="nav-link" href="contact.html">CONTACT US</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="login">LOGIN</a>
+                                <a class="nav-link" href="login.jsp">LOGIN</a>
                             </li>
                         </ul>
                     </div>
@@ -87,7 +87,7 @@
                         <img src="images/slider-1.jpg" alt="#">
 
                         <div class="carousel-caption">
-                            <a href="showRestaurants" > <button  class="btn btn-subscribe">Book your Table</button></a>
+                            <a href="showRestaurants" > <button  class="btn btn-subscribe">Book Your Table</button></a>
                             <h2>Best Restaurant with best foods</h2>
                             <h1>The heart of every inidian</h1>
                             <div class="row">

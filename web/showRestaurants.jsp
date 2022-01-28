@@ -38,8 +38,7 @@
 
                                 </div>
                                 <div class="sec-btn">
-                                    <button class="btn1">Reserve</button>
-                                    <button class="btn2">WISHLIST</button>
+                                    <a href="index.jsp" ><button class="btn1">Book a table</button> </a>
                                 </div>
                                 <div class="sec-text">
                                     <h4><s:property value="restaurantName" /></h4>

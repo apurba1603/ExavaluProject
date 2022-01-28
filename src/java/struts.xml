@@ -12,5 +12,8 @@
         <action name="showRestaurants" class="com.tablebooking.actions.RestaurantAction" method="showRestaurants">
             <result name="RESTAURANTS">/showRestaurants.jsp</result>
         </action>
+        <action name="registerUser" class="com.tablebooking.actions.UserAction" method="registerUser">
+            <result name="REGISTER">/login.jsp</result>
+        </action>
     </package>
 </struts>
