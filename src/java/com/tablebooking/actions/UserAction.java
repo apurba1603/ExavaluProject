@@ -1,18 +1,22 @@
 package com.tablebooking.actions;
 
-
 import com.opensymphony.xwork2.ActionSupport;
 import com.tablebooking.beans.User;
 import com.tablebooking.dao.UserServices;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+import org.apache.struts2.dispatcher.SessionMap;
+import org.apache.struts2.interceptor.SessionAware;
+import java.util.Map;
+import javax.servlet.http.HttpSession;
+import org.apache.struts2.ServletActionContext;
 
 /**
  *
  * @author Apu
  */
-public class UserAction extends ActionSupport {
+public class UserAction implements SessionAware {
 
     private String userName;
     private String password;
@@ -31,6 +35,8 @@ public class UserAction extends ActionSupport {
     private String msg = "";
     UserServices userServices = null;
     private int ctr = 0;
+
+    private SessionMap<String, Object> sessionMap;
 
     public String registerUser() throws Exception {
         userServices = new UserServices();
@@ -52,16 +58,21 @@ public class UserAction extends ActionSupport {
     public String userLogin() throws Exception {
         UserServices dao = new UserServices();
         String login;
+        User myUser = new User();
+        myUser.setUserName(userName);
+        myUser.setPassword(password);
 
+        User validUser = UserServices.validateLoginCredentials(myUser);
         try {
-            User user = dao.validateLoginCredentials(userName, password);
-            if (user != null) {
-                userName = user.getUserName();
-                password = user.getPassword();
-                firstName = user.getFirstName();
-                lastName = user.getLastName();
-                email = user.getEmail();
-                phoneNumber = user.getPhoneNumber();
+
+            if (validUser.isValidUser()) {
+                sessionMap.put("User", validUser);
+                userName = validUser.getUserName();
+                password = validUser.getPassword();
+                firstName = validUser.getFirstName();
+                lastName = validUser.getLastName();
+                email = validUser.getEmail();
+                phoneNumber = validUser.getPhoneNumber();
                 login = "LOGIN";
             } else {
                 setMsg("Login failed");
@@ -74,6 +85,48 @@ public class UserAction extends ActionSupport {
         }
 
         return login;
+    }
+
+    public String userProfile() throws Exception {
+        HttpSession session = ServletActionContext.getRequest().getSession(false);
+        User user = (User) session.getAttribute("User");
+        System.out.println("user:" + user);
+        String valid;
+
+        try {
+            System.out.println("in try block user:" + user.isValidUser());
+            if (user != null && user.isValidUser()) {
+                userName = user.getUserName();
+                password = user.getPassword();
+                firstName = user.getFirstName();
+                lastName = user.getLastName();
+                email = user.getEmail();
+                phoneNumber = user.getPhoneNumber();
+                valid = "VALID";
+            } else {
+                setMsg("Login failed");
+                valid = "INVALID";
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            valid = "INVALID";
+        }
+        System.out.println(valid);
+        return valid;
+    }
+
+    public String logout() throws Exception {
+        try {
+            if (sessionMap != null) {
+            sessionMap.invalidate();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        
+        
+        return "LOGOUT";
     }
 
     public String deleteUser() throws Exception {
@@ -349,5 +402,10 @@ public class UserAction extends ActionSupport {
      */
     public void setSubmitType(String submitType) {
         this.submitType = submitType;
+    }
+
+    @Override
+    public void setSession(Map<String, Object> map) {
+        sessionMap = (SessionMap) map; // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }

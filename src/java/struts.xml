@@ -5,15 +5,32 @@
 <struts>
     <!-- Configuration for the default package. -->
     <package name="default" extends="struts-default">
+        <action name="index" >
+            <result >/index.jsp</result>
+        </action>
         <action name="login" class="com.tablebooking.actions.UserAction" method="userLogin">
-            <result name="LOGIN">/index.jsp</result>
+            <result name="LOGIN">/userProfile.jsp</result>
             <result name="LOGINFAILED">/login.jsp</result>
         </action>
         <action name="showRestaurants" class="com.tablebooking.actions.RestaurantAction" method="showRestaurants">
             <result name="RESTAURANTS">/showRestaurants.jsp</result>
         </action>
+        <action name="bookTable" class="com.tablebooking.actions.RestaurantAction" method="bookTable">
+            <result name="RESTAURANT">/bookTable.jsp</result>
+        </action>
+        <action name="reservation" class="com.tablebooking.actions.RestaurantAction" method="reservation">
+            <result name="RESERVED">/reservationForm.jsp</result>
+            <result name="FORM">/reservationForm.jsp</result>
+        </action>
         <action name="registerUser" class="com.tablebooking.actions.UserAction" method="registerUser">
             <result name="REGISTER">/login.jsp</result>
+        </action>
+        <action name="profile" class="com.tablebooking.actions.UserAction" method="userProfile">
+            <result name="VALID">/userProfile.jsp</result>
+            <result name="INVALID">/login.jsp</result>
+        </action>
+        <action name="logout" class="com.tablebooking.actions.UserAction" method="logout">
+            <result name="LOGOUT" type="chain">/index</result>
         </action>
     </package>
 </struts>

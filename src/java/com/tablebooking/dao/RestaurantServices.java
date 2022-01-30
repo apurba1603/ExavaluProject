@@ -78,6 +78,7 @@ public class RestaurantServices {
     }
 
     public Restaurant fetchRestaurantDetails(int restaurantId) throws SQLException, Exception {
+        System.out.println("Services: "+restaurantId);
         ResultSet rs = null;
         Connection con = null;
         Restaurant restaurant = new Restaurant();

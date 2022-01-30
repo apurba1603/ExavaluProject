@@ -39,7 +39,7 @@ public class ReservationServicesTest {
     }
 
     /**
-     * Test of makeReservation method, of class ReservationtServices.
+     * Test of makeReservation method, of class ReservationServices.
      */
     @Test
     public void testMakeReservation() throws Exception {
@@ -49,7 +49,7 @@ public class ReservationServicesTest {
         String dateTime = "27th Jan 12.00-12.30PM";
         int bookedTable = 1;
         int orderId = 1;
-        ReservationtServices instance = new ReservationtServices();
+        ReservationServices instance = new ReservationServices();
         int expResult = 1;
         int result = instance.makeReservation(restaurantId, customerId, dateTime, bookedTable, orderId);
         assertEquals(expResult, result);
@@ -58,12 +58,12 @@ public class ReservationServicesTest {
     }
 
     /**
-     * Test of showAllReservations method, of class ReservationtServices.
+     * Test of showAllReservations method, of class ReservationServices.
      */
     @Test
     public void testShowAllReservations() throws Exception {
         System.out.println("showAllReservations");
-        ReservationtServices instance = new ReservationtServices();
+        ReservationServices instance = new ReservationServices();
         List expResult = null;
         List result = instance.showAllReservations();
         assertNotNull(result);
@@ -72,13 +72,13 @@ public class ReservationServicesTest {
     }
 
     /**
-     * Test of fetchReservationDetails method, of class ReservationtServices.
+     * Test of fetchReservationDetails method, of class ReservationServices.
      */
     @Test
     public void testFetchReservationDetails() throws Exception {
         System.out.println("fetchReservationDetails");
         int reservationId = 1;
-        ReservationtServices instance = new ReservationtServices();
+        ReservationServices instance = new ReservationServices();
         Reservations expResult = null;
         Reservations result = instance.fetchReservationDetails(reservationId);
         assertNotNull(result);
@@ -87,7 +87,7 @@ public class ReservationServicesTest {
     }
 
     /**
-     * Test of updateReservationDetails method, of class ReservationtServices.
+     * Test of updateReservationDetails method, of class ReservationServices.
      */
     @Test
     public void testUpdateReservationDetails() throws Exception {
@@ -98,7 +98,7 @@ public class ReservationServicesTest {
         String dateTime = "27th Jan 12.00-12.30PM";
         int bookedTable = 2;
         int orderId = 1;
-        ReservationtServices instance = new ReservationtServices();
+        ReservationServices instance = new ReservationServices();
         int expResult = 1;
         int result = instance.updateReservationDetails(reservationId, restaurantId, customerId, dateTime, bookedTable, orderId);
         assertEquals(expResult, result);
@@ -107,13 +107,13 @@ public class ReservationServicesTest {
     }
 
     /**
-     * Test of cancelReservation method, of class ReservationtServices.
+     * Test of cancelReservation method, of class ReservationServices.
      */
     @Test
     public void testCancelReservation() throws Exception {
         System.out.println("cancelReservation");
         int reservationId = 1;
-        ReservationtServices instance = new ReservationtServices();
+        ReservationServices instance = new ReservationServices();
         int expResult = 1;
         int result = instance.cancelReservation(reservationId);
         assertEquals(expResult, result);

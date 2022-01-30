@@ -1,5 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="s" uri="/struts-tags"%>
+<jsp:include page="navbar.jsp" ></jsp:include>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,22 +9,6 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     </head> 
     <body>   
-        <header class="header">
-            <div class="container">
-                <div class="logo">
-                    <a href="#"><img src="images/logo.png" width="300" alt="logo"/></a>
-                </div>
-
-                <div class="icon">
-                    <ul>
-                        <li><a href="#"><img src="images/icon/profile.svg" width="15" alt="icon"><br/>Profile</a></li>
-                        <li><a href="#"><img src="images/icon/list.svg" width="15" alt="icon"><br/>Wishlist</a></li>
-                        <li><a href="#"><img src="images/icon/shopping_cart.png" width="15" alt="icon"><br/>cart</a></li>
-                    </ul>
-                </div>
-            </div>
-        </header>
-
         <section class="section">
             <div class="container">
                 <div class="head-text">
@@ -38,7 +23,7 @@
 
                                 </div>
                                 <div class="sec-btn">
-                                    <a href="index.jsp" ><button class="btn1">Book a table</button> </a>
+                                    <a href="bookTable.action?restaurantId=<s:property value="restaurantId"/>" ><button class="btn1">Book a table</button> </a>
                                 </div>
                                 <div class="sec-text">
                                     <h4><s:property value="restaurantName" /></h4>

@@ -16,6 +16,7 @@
             <div class="signup">
                 <form action="registerUser" method="post">
                     <label for="chk" aria-hidden="true">Register User</label>
+                    <span style="color: red;"><c:out value="${requestScope.MSG}"></c:out></span>
                     <input type="text" name="userName" placeholder="User name" required="">
                     <input type="password" name="password" placeholder="Password" required="">
                     <input type="text" name="firstName" placeholder="FirstName" required="">

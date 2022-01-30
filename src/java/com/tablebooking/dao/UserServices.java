@@ -163,10 +163,12 @@ public class UserServices {
         }
     }
 
-    public User validateLoginCredentials(String userName, String password) throws SQLException {
+    public static User validateLoginCredentials(User user) throws SQLException {
         ResultSet rs = null;
         Connection con = null;
-        User user = null;
+        String userName = user.getUserName();
+        String password = user.getPassword();
+        
         try {
 
             con = ConnectionManager.getConnection();
@@ -188,6 +190,7 @@ public class UserServices {
                 user.setEmail(rs.getString("email"));
                 user.setPhoneNumber(rs.getString("phoneNumber"));
                 user.setStatus(true);
+                user.setValidUser(true);
             }
 
         } catch (Exception e) {
